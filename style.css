@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-letra: "Montserrat", sans-serif
+}
+
+body{
+    box-sizing: border-box;
+    background: url('Wuthering+Waves+CBT2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+
+h3{
+    font-family: var(--fonte-letra);
+}
+
+.conteudo__principal{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    font-family: var(--fonte-letra);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 24px;
+    width: 300px;
+    padding: 30px 25px;
+}
+
+.conteudo__principal__login{
+    position: relative;
+    width: 280px;
+    justify-content: center;
+    margin: 5px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 16px;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 280px;
+    font-size: 14px;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+input::placeholder{
+    font-size: 14px;
+    color: black;
+}
+
+i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.conteudo__principal__botao{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 24px;
+    width: 120px;
+    justify-content: center;
+    padding: 0px;
+    margin: 20px 0 15px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.botao_login{
+    width: 100%;
+    border-radius: 16px;
+    padding: 2px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.botao_login:hover{
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.fazer__registro{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--fonte-letra);
+}
+
+a{
+    text-decoration: none;
+    color: goldenrod
+}
